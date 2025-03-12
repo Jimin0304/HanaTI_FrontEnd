@@ -1,0 +1,63 @@
+#pongWorld {
+  display: flex;
+  flex-direction: column;
+}
+#pongWorld > header {
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 83px;
+  margin-top: -1%;
+}
+#pongWorld > header .text {
+  flex-direction: column;
+  width: 1000px;
+}
+#pongWorld > header .text > h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  margin-bottom: -0.5%;
+}
+#pongWorld > header .text > h2 {
+  font-size: 25pt;
+  font-weight: normal;
+  margin-top: 0;
+}
+#pongWorld > header > a > img {
+  margin-top: -30%;
+  width: 137px;
+  height: 137px;
+  padding: 10px;
+}
+#pongWorld > .screen {
+  display: flex;
+  flex-direction: row;
+  margin-top: -4.8%;
+  padding-left: 57px;
+}
+#pongWorld table,
+#pongWorld td {
+  border-collapse: collapse;
+}
+#pongWorld table {
+  width: 1150px;
+  height: 460px;
+}
+#pongWorld td {
+  width: 50%; /* 각 셀 너비 */
+  height: 360px; /* td 높이를 고정 */
+  text-align: center; /* 이미지 가운데 정렬 */
+  vertical-align: middle; /* 세로 중앙 정렬 */
+  overflow: hidden; /* 넘치는 부분 자르기 */
+  padding: 0;
+}
+#pongWorld td img {
+  width: 100%; /* 너비를 td에 맞춤 */
+  height: 98%; /* 높이를 td에 맞춤 */
+  object-fit: cover; /* 이미지가 td를 꽉 채우도록 조정 */
+}
+#pongWorld td:nth-child(2) img {
+  object-position: left top;
+}
