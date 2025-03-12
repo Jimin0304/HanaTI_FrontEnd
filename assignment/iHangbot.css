@@ -1,0 +1,73 @@
+#iHangbot {
+  display: flex;
+  flex-direction: column;
+}
+#iHangbot > header {
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 100px;
+  margin-top: -4%;
+}
+#iHangbot > header .text {
+  flex-direction: column;
+  width: 1000px;
+}
+#iHangbot > header .text > h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  margin-bottom: -0.5%;
+}
+#iHangbot > header .text > h2 {
+  font-size: 20pt;
+  font-weight: normal;
+  margin-top: 0;
+}
+#iHangbot > header > a > img {
+  margin-top: -3%;
+  width: 150px;
+  height: 150px;
+}
+#iHangbot > .screen {
+  width: 1030px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -5%;
+  padding-left: 100px;
+}
+#iHangbot table,
+#iHangbot th,
+#iHangbot td {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+#iHangbot table {
+  width: 1030px;
+  height: 460px;
+}
+#iHangbot th {
+  width: 25%;
+  height: 30px;
+}
+#iHangbot td {
+  width: 25%; /* 각 셀 너비 */
+  height: 450px; /* td 높이를 고정 */
+  text-align: center; /* 이미지 가운데 정렬 */
+  vertical-align: middle; /* 세로 중앙 정렬 */
+  overflow: hidden; /* 넘치는 부분 자르기 */
+}
+#iHangbot td img {
+  width: 100%; /* 너비를 td에 맞춤 */
+  height: 100%; /* 높이를 td에 맞춤 */
+  object-fit: cover; /* 이미지가 td를 꽉 채우도록 조정 */
+  object-position: top; /* 이미지의 위쪽을 유지하고 아래를 자름 */
+}
+#iHangbot tr.description {
+  background-color: #f6f8fa;
+}
+#iHangbot tr.description th {
+  font-weight: lighter;
+}
