@@ -1,0 +1,67 @@
+#bbiyong {
+  display: flex;
+  flex-direction: column;
+}
+#bbiyong > header {
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 100px;
+  margin-top: -3%;
+}
+#bbiyong > header .text {
+  flex-direction: column;
+  width: 1000px;
+}
+#bbiyong > header .text > h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  margin-bottom: -0.5%;
+}
+#bbiyong > header .text > h2 {
+  font-size: 25pt;
+  font-weight: normal;
+  margin-top: 0;
+}
+#bbiyong > header > a > img {
+  margin-top: -3%;
+  width: 135px;
+  height: 135px;
+}
+#bbiyong > .screen {
+  width: 1030px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  margin-top: -5%;
+  padding-left: 130px;
+}
+#bbiyong table,
+#bbiyong th,
+#bbiyong td {
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+#bbiyong table {
+  width: 1030px;
+  height: 460px;
+}
+#bbiyong th {
+  width: 25%;
+  height: 30px;
+}
+#bbiyong td {
+  width: 25%; /* 각 셀 너비 */
+  height: 430px; /* td 높이를 고정 */
+  text-align: center; /* 이미지 가운데 정렬 */
+  vertical-align: middle; /* 세로 중앙 정렬 */
+  overflow: hidden; /* 넘치는 부분 자르기 */
+}
+#bbiyong td img {
+  width: 100%; /* 너비를 td에 맞춤 */
+  height: 100%; /* 높이를 td에 맞춤 */
+  object-fit: cover; /* 이미지가 td를 꽉 채우도록 조정 */
+  object-position: top; /* 이미지의 위쪽을 유지하고 아래를 자름 */
+}
