@@ -1,0 +1,65 @@
+#introduction {
+  display: flex;
+  flex-direction: column; /* 전체적으로 세로 정렬 */
+}
+#introduction .aboutMe {
+  display: flex;
+  flex-direction: row;
+}
+#introduction .selfie {
+  flex: 1; /* 왼쪽 영역 */
+  display: flex;
+}
+#introduction .info {
+  flex: 2; /* 오른쪽 영역 */
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  margin: 0 0 0 -10px;
+}
+#introduction .selfie img {
+  width: 340px;
+  height: 380px;
+  padding-left: 60px;
+  padding-top: 65px;
+}
+#introduction .info {
+  padding: 70px 0 0 50px;
+}
+#introduction .info h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  margin: -2px;
+}
+#introduction .info p {
+  font-size: 20pt;
+  font-weight: Regular;
+  margin: -2px;
+}
+#introduction .travel_img {
+  margin-top: 15px; /* 위쪽 여백 추가 */
+  display: flex;
+  flex-direction: row;
+}
+#introduction .travel_img .photo1 {
+  padding-left: 60px;
+  width: 430px;
+  height: 220px;
+}
+#introduction .travel_img .photo2 {
+  margin-top: -170px;
+  margin-left: -50px;
+  width: 280px;
+  height: 380px;
+}
+#introduction .travel_img .photo3 {
+  margin-top: -205px;
+  width: 280px;
+  height: 380px;
+}
+#introduction .travel_img .photo4 {
+  margin-top: -150px;
+  margin-left: -50px;
+  width: 280px;
+  height: 380px;
+}

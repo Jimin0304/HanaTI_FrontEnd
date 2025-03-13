@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Introduce about me!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Nanum+Gothic&family=Noto+Serif+KR:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="introduction.css" />
     <link rel="stylesheet" type="text/css" href="bbiyong.css" />
     <link rel="stylesheet" type="text/css" href="iHangbot.css" />
     <link rel="stylesheet" type="text/css" href="pongWorld.css" />
@@ -18,12 +25,35 @@
         background-color: #fefefe;
         margin: 12px auto;
       }
+      .gothic-a1-regular {
+        font-family: "Gothic A1", sans-serif;
+        font-style: normal;
+      }
     </style>
   </head>
   <body>
-    <div id="me" class="content"></div>
-    <div id="technique" class="content"></div>
-    <div id="bbiyong" class="content">
+    <div id="introduction" class="content gothic-a1-regular">
+      <div class="aboutMe">
+        <div class="selfie">
+          <img src="./selfie.jpeg" alt="프로필 사진" />
+        </div>
+        <div class="info">
+          <h1>박지민</h1>
+          <p>2000.03.04 (26살)</p>
+          <p>ESTP</p>
+          <p>~24.08 숭실대학교 소프트웨어학부 졸업</p>
+          <p>취미: 여행</p>
+        </div>
+      </div>
+      <div class="travel_img">
+        <img class="photo1" src="./photo1.jpeg" alt="여행 사진1" />
+        <img class="photo2" src="./photo2.jpeg" alt="여행 사진2" />
+        <img class="photo3" src="./photo3.jpeg" alt="여행 사진3" />
+        <img class="photo4" src="./photo4.jpeg" alt="여행 사진4" />
+      </div>
+    </div>
+    <div id="technique" class="content gothic-a1-regular"></div>
+    <div id="bbiyong" class="content gothic-a1-regular">
       <header>
         <div class="text">
           <h1>삐용삐용</h1>
@@ -62,7 +92,7 @@
         </table>
       </div>
     </div>
-    <div id="iHangbot" class="content">
+    <div id="iHangbot" class="content gothic-a1-regular">
       <header>
         <div class="text">
           <h1>아이행봇해</h1>
@@ -76,8 +106,8 @@
         <a class="qr-code" href="https://github.com/iHangbot">
           <img
             src="./iHangbot_qr.png"
-            title="아이행봇해해 GitHub Link"
-            alt="아이행봇해해 GitHub 연결 링크입니다."
+            title="아이행봇해 GitHub Link"
+            alt="아이행봇해 GitHub 연결 링크입니다."
           />
         </a>
       </header>
@@ -112,7 +142,7 @@
         </table>
       </div>
     </div>
-    <div id="pongWorld" class="content">
+    <div id="pongWorld" class="content gothic-a1-regular">
       <header>
         <div class="text">
           <h1>PONG WORLD</h1>
@@ -124,8 +154,8 @@
         >
           <img
             src="./pongWorld_qr.png"
-            title="Pong World GitHub Link"
-            alt="Pong World GitHub 연결 링크입니다."
+            title="PongWorld GitHub Link"
+            alt="PongWorld GitHub 연결 링크입니다."
           />
         </a>
       </header>
