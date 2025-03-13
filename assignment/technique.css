@@ -1,0 +1,165 @@
+#technique {
+  display: flex;
+  flex-direction: column;
+}
+#technique > header {
+  width: 1100px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 65px;
+  position: relative;
+}
+#technique > header .text {
+  flex-direction: column;
+  width: 1000px;
+}
+#technique > header .text > h1 {
+  font-size: 35pt;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+#technique > header .text > h2 {
+  font-size: 18pt;
+  font-weight: normal;
+  margin-top: 0;
+}
+#technique > header > a > figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  right: -20px;
+  bottom: -10px;
+}
+#technique > header > a > figure > img {
+  width: 165px;
+  height: 165px;
+}
+#technique > header > a > figure > figcaption {
+  text-align: center; /* 가운데 정렬 */
+  font-size: 24px; /* 글씨 크기 조정 (선택 사항) */
+  color: black;
+}
+#technique > .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 95px;
+  margin-left: 50px;
+}
+#technique > .icons > .left-side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  height: 450px;
+}
+.title {
+  height: 35px;
+  background-color: #8bb0fa;
+  border-radius: 3px 3px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 17.5pt;
+}
+.body {
+  width: 570px;
+  border: 2.5px solid #8bb0fa;
+  border-radius: 13px 18px;
+}
+#django,
+#python,
+#postgresql {
+  width: 60px;
+  height: 65px;
+  margin-top: 12px;
+  margin-left: -10px;
+}
+#technique > .icons > .left-side > .title {
+  width: 150px;
+}
+#technique > .icons > .left-side > .body {
+  height: 340px;
+  margin-left: -12px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 40px 12px;
+}
+#technique > .icons > .left-side > .body > figure {
+  margin: 0;
+  text-align: center;
+}
+figcaption {
+  margin-top: 5px;
+  color: #9b9b9b;
+}
+.tech_img {
+  width: 70px;
+  height: 80px;
+}
+#technique > .icons > .right-side {
+  display: flex;
+  flex-direction: column;
+}
+#technique > .icons > .right-side > * > .body > figure {
+  margin: 0;
+  text-align: center;
+}
+#technique > .icons > .right-side > .collabo {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 225px;
+  gap: 10px;
+  margin-bottom: -20px;
+}
+#technique > .icons > .right-side > .collabo > .title {
+  width: 210px;
+}
+#technique > .icons > .right-side > * > .body {
+  height: 140px;
+  margin-left: -15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#github {
+  height: 70px;
+  margin-top: 5px;
+}
+#figma {
+  padding-top: 5px;
+  width: 50px;
+  height: 70px;
+}
+#technique > .icons > .right-side > .build {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 225px;
+  gap: 10px;
+}
+#technique > .icons > .right-side > .build > .title {
+  width: 160px;
+}
+#ec2,
+#rds {
+  width: 60px;
+}
+#docker {
+  width: 100px;
+  height: 65px;
+  margin-top: 10px;
+}
+.body > figure > figcaption:hover {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  transition: all 0.5s;
+}
