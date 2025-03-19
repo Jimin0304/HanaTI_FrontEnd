@@ -1,0 +1,32 @@
+header {
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 20px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.input input {
+  width: 40px;
+}
+.input button {
+  width: 50px;
+}
+.result {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #000;
+}
+.mainPage {
+  width: 100px;
+  height: 100px;
+}
