@@ -4,65 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FrontEnd Test</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="#">
-          <img
-            src="https://www.kopo.ac.kr/images/logo_new/gm.png"
-            alt="한국폴리텍대학 광명융합기술교육원 로고"
-            id="logo"
-          />
-        </a>
-        <ul id="nav-menu">
-          <li class="myself">
-            <a href="#">내 소개</a>
-          </li>
+        <img
+          src="https://jwonchi.github.io/kopoclass/ttt/mainlogo.png"
+          alt="김민준 기술블로그 로고"
+          id="logo"
+        />
+        <ul class="nav-menu">
+          <li class="myself">내 소개</li>
           <li class="technique">
-            <a href="#">기술 스택</a>
+            기술 스택
             <ul class="tech-menu">
-              <li class="front"><a href="#">프론트</a></li>
-              <li class="back"><a href="#">백엔드</a></li>
+              <li class="fe">프론트</li>
+              <li class="be">백엔드</li>
             </ul>
           </li>
-          <li class="career">
-            <a href="#">경력</a>
-          </li>
-          <li class="blog">
-            <a href="#">블로그</a>
-          </li>
+          <li class="career">경력</li>
+          <li class="blog">블로그</li>
+          <li class="guestbook">방명록</li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="home">
+      <section class="home">
         <h1>모르면 마법, 알면 기술이다.</h1>
-        <h2>
-          박지민의 기술 블로그에
-          <div>오신 여러분을 환영합니다.</div>
-        </h2>
-      </div>
-      <div class="myself">
-        <img src="./jimin.jpeg" alt="프로필 사진" />
+        <h2>김민준의 기술 블로그에<br />오신 여러분을 환영합니다.</h2>
+      </section>
+      <section class="myself">
+        <h2>김민준을 소개합니다.</h2>
+        <div>
+          <img src="../assets/kimminjun.png" alt="김민준 프로필 사진" />
+          <p>
+            대학 졸업을 앞둔 컴퓨터 공학 전공의 학생, 김민준입니다. 전공 수업과
+            여러 프로젝트를 통해 소프트웨어 개발에 필요한 다양한 프로그래밍
+            언어와 기술을 익혔습니다. 특히, 인공 지능과 모바일 애플리케이션
+            개발에 깊은 관심을 가지고 있습니다. 대학교에서는 동아리 활동을 통해
+            팀워크와 리더십 경험도 쌓았습니다. 졸업 후에는 이러한 기술과 경험을
+            바탕으로 IT 분야에서 전문 개발자로 성장하고자 합니다.
+          </p>
+        </div>
+      </section>
+      <section class="fe">
+        <h2>Front-End</h2>
         <p>
-          대학 졸업을 앞둔 컴퓨터 공학 전공의 학생, 김민준입니다. 전공 수업과
-          여러 프로젝트를 통해 소프트웨어 개발에 필요한 다양한 프로그래밍 언어와
-          기술을 익혔습니다. 특히, 인공 지능과 모바일 애플리케이션 개발에 깊은
-          관심을 가지고 있습니다. 대학교에서는 동아리 활동을 통해 팀워크와
-          리더십 경험도 쌓았습니다. 졸업 후에는 이러한 기술과 경험을 바탕으로 IT
-          분야에서 전문 개발자로 성장하고자 합니다.
-        </p>
-      </div>
-      <div class="technique">
-        <div class="front">
           웹 개발에 관심이 많아, 프론트엔드 개발에 필요한 여러 기술을 스스로
           학습하고 있습니다. 제가 주로 사용하는 프론트엔드 기술은 HTML, CSS,
           JavaScript입니다. 이를 기반으로 최근에는 React.js 프레임워크를 배우기
@@ -75,8 +63,11 @@
           디자인을 손쉽게 구현할 수 있게 해주어 사용자 경험을 크게 향상시키는 데
           기여했습니다. 이러한 경험을 통해 사용자 중심의 UI/UX 디자인의 중요성을
           더 깊이 이해하게 되었습니다.
-        </div>
-        <div class="back">
+        </p>
+      </section>
+      <section class="be">
+        <h2>Back-End</h2>
+        <p>
           백엔드 개발에 특히 관심이 많아, 이 분야에 필요한 여러 기술을 깊이 있게
           학습하고 있습니다. 제가 주로 사용하는 백엔드 기술은 Python과
           Java입니다. 이 언어들을 사용하여 서버 사이드 로직과 데이터베이스
@@ -92,9 +83,10 @@
           서비스(AWS, Azure)를 이용한 환경 구축에도 참여했습니다. 앞으로도
           체계적인 백엔드 시스템 구축과 성능 최적화를 위해 지속적으로 학습하고,
           전문 백엔드 개발자로 성장하겠습니다.
-        </div>
-      </div>
-      <div class="career">
+        </p>
+      </section>
+      <section class="career">
+        <h2>경력</h2>
         <ul>
           <li><strong>학력:</strong> 한국대학교에서 철학과를 졸업.</li>
           <li>
@@ -105,41 +97,69 @@
             <strong>수상 경력:</strong> 구글에서 주최한 해커톤에서 최우수상을
             수상하였습니다.
           </li>
-          <li>로또 프로그램 개발<a href="./lotto.html">(클릭)</a></li>
+          <li>로또 프로그램 개발<a href="../html/lotto.html">(클릭)</a></li>
         </ul>
-      </div>
-      <div class="blog">
-        <article id="news1">
-          <h1 id="title1"></h1>
+      </section>
+      <section class="blog">
+        <h2>blog에 놀러오세요.</h2>
+        <article id="blog1">
+          <h2 id="title1"></h2>
         </article>
-        <article id="news2">
-          <h1 id="title2"></h1>
+        <article id="blog2">
+          <h2 id="title2"></h2>
         </article>
-        <article id="news3">
-          <h1 id="title3"></h1>
+        <article id="blog3">
+          <h2 id="title3"></h2>
         </article>
-        <article id="news4">
-          <h1 id="title4"></h1>
+        <article id="blog4">
+          <h2 id="title4"></h2>
         </article>
-        <article id="news5">
-          <h1 id="title5"></h1>
+        <article id="blog5">
+          <h2 id="title5"></h2>
         </article>
-        <article id="news6">
-          <h1 id="title6"></h1>
+        <article id="blog6">
+          <h2 id="title6"></h2>
         </article>
-      </div>
+      </section>
+      <section class="guestbook">
+        <div clas="heading-container">
+          <h2>방명록을 작성해주세요 😊</h2>
+          <div class="reload-gb">
+            이전 방명록도 불러올까요? 클릭하면 이전 방명록이 추가됩니다.
+          </div>
+        </div>
+        <div class="guestbook-list">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 20%">작성자</th>
+                <th style="width: 50%">내용</th>
+                <th style="width: 30%">작성일</th>
+              </tr>
+            </thead>
+            <tbody id="gb-body"></tbody>
+          </table>
+        </div>
+        <div class="textInput">
+          <input type="text" id="nickname" /> 닉네임을 입력하세요!
+          <div>
+            <textarea id="content">반가워요!</textarea>
+            <button>완료</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <div id="facebook">
-        페이스북
-        <img src="./facebook.png" alt="페이스북 로고" />
-      </div>
-      <div id="instagram">
-        인스타그램
-        <img src="./instagram.png" alt="인스타그램 로고" />
-      </div>
-      <div id="email">Mail : 2560340087@office.kopo.ac.kr</div>
+      <a href="https://www.facebook.com/" class="facebook"
+        >페이스북<img src="../assets/facebook.png" alt="페이스북 로고"
+      /></a>
+      <a href="https://www.instagram.com/" class="instagram"
+        >인스타그램<img src="../assets/instagram.png" alt="인스타그램 로고"
+      /></a>
+      <a href="mailto:minjoon@gggmail.com" class="email"
+        >Mail: minjoon@gggmail.com</a
+      >
     </footer>
-    <script src="./test.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>

@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.querySelector(".input input");
-  const btn = document.querySelector("button");
+  const startBtn = document.querySelector(".go");
   const text = document.querySelector(".result");
+  const backBtn = document.querySelector(".back");
 
-  btn.addEventListener("click", (ev) => {
+  startBtn.addEventListener("click", (ev) => {
     let gameCount = parseInt(input.value);
     if (isNaN(gameCount) || gameCount < 1 || gameCount > 5) {
       alert("1~5 사이의 숫자를 입력하세요.");
@@ -16,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let i = 0; i < gameCount; i++) {
       const lottoNumbers = generateLottoNumbers();
       const lottoText = document.createElement("p");
-      console.log(lottoNumbers);
       lottoText.textContent = `${i + 1}:  ${lottoNumbers.join(", ")}`;
       text.appendChild(lottoText);
     }
@@ -30,4 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return [...lotto].sort((a, b) => a - b);
   }
+
+  backBtn.addEventListener("click", function () {
+    history.back();
+  });
 });
